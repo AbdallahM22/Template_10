@@ -66,9 +66,9 @@ let number = document.querySelectorAll(".counter .number");
 
 window.addEventListener("scroll", ()=> {
     if (window.scrollY >= counter.offsetTop - 400) {
-        console.log("ol")
+
         number.forEach((num)=> {
-            console.log(num.dataset.count)
+            
             let interval = setInterval(()=>{
                 if(num.innerHTML != num.dataset.count) {
                     num.innerHTML++;
